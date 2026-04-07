@@ -12,6 +12,8 @@ declare global {
 }
 
 export type RootStackParamList = {
+  Obats: undefined;
+  Obat: { kode: string };
   Posts: undefined;
   Post: { id: number };
   NotFound: undefined;

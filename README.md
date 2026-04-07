@@ -72,8 +72,14 @@ Expo CLI loads .env files according to the [standard .env file resolution](https
 Create a `.env` file in the root of your project for development purposes:
 
 ```
-EXPO_PUBLIC_API_URL=https://jsonplaceholder.typicode.com
+EXPO_PUBLIC_API_URL=https://YOUR_PROJECT_ID.supabase.co
+EXPO_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+EXPO_PUBLIC_SUPABASE_OBAT_TABLE=obat
 ```
+
+For Option A (single flat table `obat`), you can run:
+
+- `supabase/option-a-obat.sql`
 
 ### Production Environment
 

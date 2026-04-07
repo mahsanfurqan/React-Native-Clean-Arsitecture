@@ -8,6 +8,8 @@ export default interface IHttpClient {
     config?: AxiosRequestConfig
   ): Promise<ResponseType>;
 
+  head(url: string, config?: AxiosRequestConfig): Promise<Record<string, string>>;
+
   post<DataType, ResponseType>(
     url: string,
     data?: DataType,

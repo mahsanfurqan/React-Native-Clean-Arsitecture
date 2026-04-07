@@ -11,7 +11,9 @@ import Env, { EnvToken } from "./domain/entities/Env";
       isGlobal: true,
       provide: EnvToken,
       useValue: {
-        apiUrl: process.env.EXPO_PUBLIC_API_URL,
+        apiUrl: process.env.EXPO_PUBLIC_API_URL ?? "",
+        supabaseAnonKey: process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY ?? "",
+        supabaseObatTable: process.env.EXPO_PUBLIC_SUPABASE_OBAT_TABLE ?? "obat",
       } as Env,
     },
     {

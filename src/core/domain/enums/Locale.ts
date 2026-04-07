@@ -1,6 +1,6 @@
 enum Locale {
   English = "en",
-  Spanish = "es",
+  Indonesian = "id",
 }
 
 export default Locale;

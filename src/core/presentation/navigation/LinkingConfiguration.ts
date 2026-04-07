@@ -12,7 +12,9 @@ const linking: LinkingOptions<RootStackParamList> = {
   prefixes: [Linking.createURL("/")],
   config: {
     screens: {
-      Posts: "",
+      Obats: "",
+      Obat: "obat/:kode",
+      Posts: "posts",
       Post: "post/:id",
       NotFound: "*",
     },

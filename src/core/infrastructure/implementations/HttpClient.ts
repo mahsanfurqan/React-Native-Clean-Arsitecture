@@ -35,6 +35,12 @@ class HttpClient implements IHttpClient {
       .then((response) => response.data);
   }
 
+  public head(url: string, config?: AxiosRequestConfig) {
+    return this.axios.head(url, config).then((response) => {
+      return response.headers as Record<string, string>;
+    });
+  }
+
   public post<DataType, ResponseType>(
     url: string,
     data?: DataType,
